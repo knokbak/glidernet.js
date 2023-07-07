@@ -32,6 +32,7 @@ export type SocketOptions = {
     port: number;
     auth: AuthenticationOptions;
     filter: PositionFilter;
+    autoReconnect?: boolean;
 };
 
 export type AuthenticationOptions = {

@@ -125,6 +125,7 @@ export class Socket extends EventEmitter {
 
     private handleClose() {
         this.emit('closed');
+        this.connect();
     }
 
     public connect() {
